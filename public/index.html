@@ -9,46 +9,105 @@
     <title>teste</title>
 </head>
 <body>
-    <div>
-        Valor da Maior oferta
-    </div>
-    <div class="qtd-price">
-        <div id="btc">0</div>
-        <div>Por</div>
-        <div id="n">0</div>
-    </div>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                API Binance
+            </div>
+            <div class="nav-menu" hidden></div>
+            <nav>
+                <ul class="menu">
+                    <li><a class="nav-link" href="#">Início</a></li>
+                    <li><a class="nav-link" href="#">Sobre</a></li>
+                    <li><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="temp">Está faltando <span id="timer">0</span> tempo</div>
+    <main class="container mt-3">
+        <div class="text-end fw-bold">Está faltando <span id="timer" class="text-danger">0</span> tempo</div>
+        <section id="bids">
+            <h2 class="text-center mb-1 fw-bold">Bids</h2>
+            <table class="table table-dark table-sm text-warning">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>BTC</th>
+                        <th>PRICE</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyBids">
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="asks" class="mt-2">
+            <h2 class="text-center mb-1 fw-bold">Asks</h2>
+            <table class="table table-dark table-sm text-warning">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>BTC</th>
+                        <th>PRICE</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyAsks">
+                    <tr>
+                        <td>1</td>
+                        <td>0.003500</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
 
-    <button class="btn btn-success" onclick="t()">teste</button>
-
-    <hr>
-    <table class="table table-primary">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>BTC</th>
-                <th>PRICE</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>0.003500</td>
-                <td>R$430,000.00</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>0.003500</td>
-                <td>R$430,000.00</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>0.003500</td>
-                <td>R$430,000.00</td>
-            </tr>
-        </tbody>
-    </table>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
