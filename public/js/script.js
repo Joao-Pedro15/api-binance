@@ -48,3 +48,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
     startTimer(duration, display)
     api()
 })
+
+document.querySelector('.nav-menu').addEventListener('click', ()=>{
+    document.querySelector('.menu').classList.toggle('active')
+})
+
+function closeMenuMobile(){
+    document.querySelector('.menu').classList.toggle('active')
+}

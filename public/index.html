@@ -15,21 +15,21 @@
             <div class="logo">
                 API Binance
             </div>
-            <div class="nav-menu" hidden></div>
             <nav>
                 <ul class="menu">
-                    <li><a class="nav-link" href="#">Início</a></li>
-                    <li><a class="nav-link" href="#about">Sobre</a></li>
-                    <li><a class="nav-link" href="#footer">Contato</a></li>
+                    <li><a class="nav-link" href="#" onclick="closeMenuMobile()">Início</a></li>
+                    <li><a class="nav-link" href="#about" onclick="closeMenuMobile()">Sobre</a></li>
+                    <li><a class="nav-link" href="#footer" onclick="closeMenuMobile()">Contato</a></li>
                 </ul>
             </nav>
+            <i class="nav-menu fas fa-bars"></i>
         </div>
     </header>
 
     <main class="container mt-3">
-        <div class="text-end fw-bold">Está faltando <span id="timer" class="text-danger">0</span> tempo</div>
+        <div class="text-timer text-end fw-bold">Está faltando <span id="timer" class="text-danger">0</span> tempo</div>
         <section id="bids">
-            <h2 class="text-center mb-1 fw-bold">Bids</h2>
+            <h2 class="text-center mb-3 fw-bold">Bids</h2>
             <table class="table table-dark table-sm text-warning">
                 <thead>
                     <tr>
@@ -67,8 +67,8 @@
                 </tbody>
             </table>
         </section>
-        <section id="asks" class="mt-2">
-            <h2 class="text-center mb-1 fw-bold">Asks</h2>
+        <section id="asks" class="mt-4">
+            <h2 class="text-center mb-3 fw-bold">Asks</h2>
             <table class="table table-dark table-sm text-warning">
                 <thead>
                     <tr>
